@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Gold Gradients for Brain & Accents -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C99D" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#9E7D52" />
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5D0" />
+      <stop offset="100%" stop-color="#D1B28A" />
+    </linearGradient>
+    <!-- Green Gradients for Leaves -->
+    <linearGradient id="leafGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3C5C4E" />
+      <stop offset="100%" stop-color="#21372E" />
+    </linearGradient>
+    <linearGradient id="leafGradMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#608473" />
+      <stop offset="100%" stop-color="#3D5E50" />
+    </linearGradient>
+    <linearGradient id="leafGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93AFA1" />
+      <stop offset="100%" stop-color="#688D7D" />
+    </linearGradient>
+    <!-- Soft Drop Shadow Filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="2.5" flood-color="#1B2B24" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)" transform="translate(5, 5)">
+    <!-- Enclosing Outer Arc (Top Right & Bottom Right Protection) -->
+    <path d="M 98 18 A 82 82 0 0 1 178 95" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 172 118 A 82 82 0 0 1 98 178" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+    <!-- Connection Dots (Virtual/Evolution) -->
+    <circle cx="184" cy="74" r="3.2" fill="url(#goldGrad)" />
+    <circle cx="188" cy="98" r="3.5" fill="url(#goldGrad)" />
+    <circle cx="183" cy="122" r="3.2" fill="url(#goldGrad)" />
+
+    <!-- LEFT HEMISPHERE: Brain / Mental & Clinical Knowledge (Gold) -->
+    <!-- Outer Contour & Lobes -->
+    <path d="M 94 28 
+             C 74 27, 54 36, 45 48 
+             C 34 58, 28 72, 30 86 
+             C 24 94, 23 106, 27 117 
+             C 24 128, 29 140, 39 149 
+             C 48 159, 64 167, 82 168 
+             C 88 168, 94 167, 94 167" 
+          stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Internal Brain Folds (Convoluciones cerebrales estilizadas) -->
+    <!-- Top Lobe fold -->
+    <path d="M 94 44 C 76 43, 62 52, 57 65 C 53 74, 58 84, 70 86 C 82 87, 94 77, 94 77" 
+          stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" fill="none" />
+    
+    <!-- Mid Frontal/Parietal fold -->
+    <path d="M 40 85 C 48 83, 56 89, 61 97 C 67 106, 61 118, 50 119 C 41 120, 35 113, 35 106" 
+          stroke="url(#goldGrad)" stroke-width="3.8" stroke-linecap="round" fill="none" />
+
+    <!-- Central Gyri folds -->
+    <path d="M 94 88 C 84 89, 74 97, 75 108 C 76 119, 86 125, 94 125" 
+          stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Lower Temporal & Occipital fold -->
+    <path d="M 48 132 C 55 125, 68 126, 75 136 C 81 145, 75 156, 64 158 C 55 160, 47 151, 48 141" 
+          stroke="url(#goldGrad)" stroke-width="3.8" stroke-linecap="round" fill="none" />
+
+    <path d="M 94 139 C 85 140, 80 148, 83 156 C 86 163, 91 166, 94 166" 
+          stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Central Vertical Separation Stem -->
+    <path d="M 95 26 L 95 170" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+
+    <!-- RIGHT HEMISPHERE: Organic Leaf / Growth, Healing & Hope (Sage Greens) -->
+    <!-- Central Leaf Vein Curve -->
+    <path d="M 96 168 C 104 140, 112 100, 102 30" stroke="url(#leafGradDark)" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Leaf 1 (Topmost bud) -->
+    <path d="M 98 32 C 112 36, 128 48, 126 62 C 124 74, 108 72, 101 64 Z" 
+          fill="url(#leafGradLight)" stroke="#2D4A3E" stroke-width="1.2" />
+
+    <!-- Leaf 2 (Upper right branch) -->
+    <path d="M 103 62 C 124 61, 148 72, 146 90 C 144 104, 122 100, 107 88 Z" 
+          fill="url(#leafGradMid)" stroke="#21372E" stroke-width="1.2" />
+
+    <!-- Leaf 3 (Middle right main foliage) -->
+    <path d="M 106 87 C 132 89, 154 104, 151 122 C 148 136, 126 130, 108 114 Z" 
+          fill="url(#leafGradDark)" stroke="#1B2B24" stroke-width="1.2" />
+
+    <!-- Leaf 4 (Lower right support leaf) -->
+    <path d="M 106 114 C 128 122, 144 138, 138 152 C 132 163, 114 156, 103 140 Z" 
+          fill="url(#leafGradMid)" stroke="#21372E" stroke-width="1.2" />
+
+    <!-- Leaf 5 (Bottom foundation leaf) -->
+    <path d="M 100 140 C 114 148, 124 159, 118 167 C 112 173, 101 169, 98 165 Z" 
+          fill="url(#leafGradLight)" stroke="#2D4A3E" stroke-width="1" />
+
+    <!-- Delicate inner leaf ribs -->
+    <path d="M 108 74 C 118 78, 130 83, 138 88" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.45" />
+    <path d="M 112 99 C 124 105, 136 112, 142 118" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.45" />
+    <path d="M 109 124 C 118 130, 127 137, 132 143" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.45" />
+  </g>
+</svg>

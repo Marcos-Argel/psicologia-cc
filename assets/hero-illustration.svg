@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0" />
+      <stop offset="100%" stop-color="#EAE3D6" />
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5CCA3" />
+      <stop offset="100%" stop-color="#B89762" />
+    </linearGradient>
+    <linearGradient id="sageAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A6B5D" />
+      <stop offset="100%" stop-color="#223A31" />
+    </linearGradient>
+    <linearGradient id="softSage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5B8AC" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#D1DDD5" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="cardGlow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#2D4A3E" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Organic Circles & Shapes -->
+  <circle cx="450" cy="180" r="160" fill="url(#softSage)" />
+  <circle cx="150" cy="350" r="120" fill="url(#softSage)" />
+  <path d="M 120 100 Q 280 40 420 130 T 520 320 T 360 460 T 140 400 Z" fill="#F4EFE6" opacity="0.6" />
+
+  <!-- Main Focal Card: Peaceful Therapeutic Atmosphere -->
+  <rect x="80" y="60" width="440" height="380" rx="28" fill="#FFFFFF" filter="url(#cardGlow)" />
+  <rect x="80" y="60" width="440" height="380" rx="28" stroke="#EAE4D8" stroke-width="1.5" />
+
+  <!-- Card Top Banner / Accent -->
+  <path d="M 80 88 Q 200 60 520 88" stroke="url(#goldAcc)" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Central Visual: Stylized Human Connection & Healing Emblem -->
+  <g transform="translate(200, 100) scale(1)">
+    <!-- Aura Ring -->
+    <circle cx="100" cy="100" r="85" stroke="url(#goldAcc)" stroke-width="2" stroke-dasharray="6 4" opacity="0.6" />
+    <circle cx="100" cy="100" r="72" fill="#FAF8F5" />
+    
+    <!-- Central Icon Brain-Leaf Harmony -->
+    <path d="M 98 45 A 55 55 0 0 1 150 98" stroke="url(#goldAcc)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 146 112 A 55 55 0 0 1 98 152" stroke="url(#goldAcc)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Left Brain contour -->
+    <path d="M 94 54 C 80 53, 66 60, 60 68 C 52 75, 48 85, 49 95 C 45 101, 45 109, 48 117 C 46 125, 50 133, 57 139 C 64 146, 76 151, 88 152 L 94 152" 
+          stroke="url(#goldAcc)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    
+    <!-- Brain waves -->
+    <path d="M 94 67 C 82 66, 72 73, 69 82 C 66 89, 70 96, 78 97" stroke="url(#goldAcc)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 57 95 C 63 93, 69 98, 72 104 C 77 110, 72 119, 64 120" stroke="url(#goldAcc)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 94 98 C 87 99, 80 105, 81 113 C 82 120, 89 124, 94 124" stroke="url(#goldAcc)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Right Leaf Flourish -->
+    <path d="M 95 152 C 101 132, 107 104, 100 54" stroke="url(#sageAcc)" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 97 56 C 107 59, 119 68, 117 78 C 115 87, 104 85, 99 79 Z" fill="#8E9B8A" />
+    <path d="M 101 78 C 116 77, 133 85, 131 98 C 129 108, 114 105, 104 96 Z" fill="#4A6B5D" />
+    <path d="M 103 96 C 122 97, 138 108, 135 121 C 132 131, 116 127, 104 115 Z" fill="#223A31" />
+    <path d="M 103 115 C 118 121, 130 133, 125 143 C 120 151, 108 146, 100 134 Z" fill="#4A6B5D" />
+  </g>
+
+  <!-- Interactive Floating Pill Badges -->
+  <!-- Pill 1: Psicooncología Especializada -->
+  <g transform="translate(60, 160)" filter="url(#cardGlow)">
+    <rect width="180" height="52" rx="26" fill="#FFFFFF" stroke="#EAE4D8" stroke-width="1.2" />
+    <circle cx="28" cy="26" r="14" fill="#F4EFE6" />
+    <path d="M 24 26 C 24 23 27 21 30 23 C 33 21 36 23 36 26 C 36 30 30 33 30 33 C 30 33 24 30 24 26 Z" fill="#C5A880" />
+    <text x="50" y="23" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#223A31">Psicooncología</text>
+    <text x="50" y="36" font-family="'Montserrat', sans-serif" font-size="9" fill="#6E7D75">Acompañamiento integral</text>
+  </g>
+
+  <!-- Pill 2: Espacio Terapéutico Seguro -->
+  <g transform="translate(360, 290)" filter="url(#cardGlow)">
+    <rect width="190" height="52" rx="26" fill="#FFFFFF" stroke="#EAE4D8" stroke-width="1.2" />
+    <circle cx="28" cy="26" r="14" fill="#EBF2EE" />
+    <path d="M 23 27 L 27 31 L 34 22" stroke="#2D4A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="50" y="23" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#223A31">Espacio Seguro</text>
+    <text x="50" y="36" font-family="'Montserrat', sans-serif" font-size="9" fill="#6E7D75">100% Confidencial</text>
+  </g>
+
+  <!-- Pill 3: Atención Virtual y Presencial -->
+  <g transform="translate(110, 360)" filter="url(#cardGlow)">
+    <rect width="175" height="50" rx="25" fill="#223A31" />
+    <circle cx="26" cy="25" r="12" fill="#3D5E50" />
+    <circle cx="26" cy="25" r="4" fill="#C5A880" />
+    <text x="48" y="23" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="#FBF9F5">Atención Virtual</text>
+    <text x="48" y="35" font-family="'Montserrat', sans-serif" font-size="8.5" fill="#C5D3CC">&amp; Presencial</text>
+  </g>
+
+  <!-- Bottom Message inside card -->
+  <text x="300" y="390" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="19" font-weight="600" font-style="italic" fill="#223A31">
+    "Acompañamos tu proceso, transformamos juntos."
+  </text>
+</svg>
