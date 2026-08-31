@@ -1,124 +1,144 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="100%" height="100%" fill="none">
   <defs>
-    <!-- Import Cormorant Garamond & Montserrat fonts for exact rendering -->
+    <!-- Google Fonts Import -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Montserrat:wght@500;600;700&amp;display=swap');
-      .brand-title-line1 {
-        font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-        font-size: 30px;
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&amp;family=Montserrat:wght@500;600;700&amp;display=swap');
+      
+      .brand-text-gold {
+        font-family: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+        font-size: 33px;
         font-weight: 600;
-        fill: #223A31;
+        fill: url(#goldGradText);
         letter-spacing: 0.5px;
       }
-      .brand-title-line2 {
-        font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-        font-size: 32px;
-        font-weight: 700;
-        fill: #223A31;
-        letter-spacing: 0.5px;
-      }
-      .brand-slogan {
-        font-family: 'Montserrat', sans-serif;
+      
+      .brand-slogan-text {
+        font-family: 'Montserrat', -apple-system, sans-serif;
         font-size: 8.5px;
         font-weight: 600;
-        fill: #6E7D75;
+        fill: #4D5750;
         letter-spacing: 2.2px;
-      }
-      .brand-accent {
-        fill: #C5A880;
       }
     </style>
 
-    <!-- Gold Gradients for Brain & Accents -->
-    <linearGradient id="goldGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E5CCA3" />
-      <stop offset="50%" stop-color="#C5A880" />
-      <stop offset="100%" stop-color="#9E7D52" />
-    </linearGradient>
-    <linearGradient id="leafGradDarkFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3C5C4E" />
-      <stop offset="100%" stop-color="#21372E" />
-    </linearGradient>
-    <linearGradient id="leafGradMidFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#608473" />
-      <stop offset="100%" stop-color="#3D5E50" />
-    </linearGradient>
-    <linearGradient id="leafGradLightFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#93AFA1" />
-      <stop offset="100%" stop-color="#688D7D" />
+    <!-- Metallic Gold Gradient for Text & Emblems -->
+    <linearGradient id="goldGradText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2CCA6" />
+      <stop offset="35%" stop-color="#C5A880" />
+      <stop offset="70%" stop-color="#A88656" />
+      <stop offset="100%" stop-color="#8F6C3C" />
     </linearGradient>
 
-    <!-- Soft Drop Shadow -->
-    <filter id="logoShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="1" dy="1.5" stdDeviation="2" flood-color="#1B2B24" flood-opacity="0.14" />
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAD7B7" />
+      <stop offset="45%" stop-color="#C5A880" />
+      <stop offset="85%" stop-color="#9C7948" />
+      <stop offset="100%" stop-color="#826233" />
+    </linearGradient>
+
+    <!-- Sage & Olive Green Gradients for Leaves -->
+    <linearGradient id="leafGradTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#97AC99" />
+      <stop offset="100%" stop-color="#728875" />
+    </linearGradient>
+
+    <linearGradient id="leafGradMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7E9482" />
+      <stop offset="100%" stop-color="#556E5A" />
+    </linearGradient>
+
+    <linearGradient id="leafGradBot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#69806D" />
+      <stop offset="100%" stop-color="#455B49" />
+    </linearGradient>
+
+    <!-- Soft Depth Filter -->
+    <filter id="logoDepth" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="1.5" stdDeviation="1.8" flood-color="#1B2B24" flood-opacity="0.16" />
     </filter>
   </defs>
 
   <!-- ISOTIPO (Left side emblem) -->
-  <g transform="translate(10, 8) scale(0.62)" filter="url(#logoShadow)">
+  <g transform="translate(14, 12) scale(0.58)" filter="url(#logoDepth)">
     <!-- Enclosing Outer Arc -->
-    <path d="M 98 18 A 82 82 0 0 1 178 95" stroke="url(#goldGradFull)" stroke-width="4.5" stroke-linecap="round" fill="none" />
-    <path d="M 172 118 A 82 82 0 0 1 98 178" stroke="url(#goldGradFull)" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 98 18 A 82 82 0 0 1 178 95" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 172 118 A 82 82 0 0 1 98 178" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" />
 
-    <!-- Connection Dots -->
-    <circle cx="184" cy="74" r="3.2" fill="url(#goldGradFull)" />
-    <circle cx="188" cy="98" r="3.5" fill="url(#goldGradFull)" />
-    <circle cx="183" cy="122" r="3.2" fill="url(#goldGradFull)" />
+    <!-- 3 Connection / Evolution Dots -->
+    <circle cx="184" cy="74" r="3.2" fill="url(#goldGrad)" />
+    <circle cx="188" cy="98" r="3.5" fill="url(#goldGrad)" />
+    <circle cx="183" cy="122" r="3.2" fill="url(#goldGrad)" />
 
-    <!-- LEFT HEMISPHERE: Brain -->
+    <!-- LEFT HEMISPHERE: Brain Gyri (Gold 3D Style) -->
     <path d="M 94 28 C 74 27, 54 36, 45 48 C 34 58, 28 72, 30 86 C 24 94, 23 106, 27 117 C 24 128, 29 140, 39 149 C 48 159, 64 167, 82 168 C 88 168, 94 167, 94 167" 
-          stroke="url(#goldGradFull)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 
     <!-- Internal Brain Folds -->
     <path d="M 94 44 C 76 43, 62 52, 57 65 C 53 74, 58 84, 70 86 C 82 87, 94 77, 94 77" 
-          stroke="url(#goldGradFull)" stroke-width="4" stroke-linecap="round" fill="none" />
+          stroke="url(#goldGrad)" stroke-width="4.2" stroke-linecap="round" fill="none" />
     
     <path d="M 40 85 C 48 83, 56 89, 61 97 C 67 106, 61 118, 50 119 C 41 120, 35 113, 35 106" 
-          stroke="url(#goldGradFull)" stroke-width="3.8" stroke-linecap="round" fill="none" />
+          stroke="url(#goldGrad)" stroke-width="3.8" stroke-linecap="round" fill="none" />
 
     <path d="M 94 88 C 84 89, 74 97, 75 108 C 76 119, 86 125, 94 125" 
-          stroke="url(#goldGradFull)" stroke-width="4" stroke-linecap="round" fill="none" />
+          stroke="url(#goldGrad)" stroke-width="4.2" stroke-linecap="round" fill="none" />
 
     <path d="M 48 132 C 55 125, 68 126, 75 136 C 81 145, 75 156, 64 158 C 55 160, 47 151, 48 141" 
-          stroke="url(#goldGradFull)" stroke-width="3.8" stroke-linecap="round" fill="none" />
+          stroke="url(#goldGrad)" stroke-width="3.8" stroke-linecap="round" fill="none" />
 
     <path d="M 94 139 C 85 140, 80 148, 83 156 C 86 163, 91 166, 94 166" 
-          stroke="url(#goldGradFull)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+          stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" fill="none" />
 
-    <path d="M 95 26 L 95 170" stroke="url(#goldGradFull)" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+    <!-- Central Vertical Separation Stem -->
+    <path d="M 95 26 L 95 170" stroke="url(#goldGrad)" stroke-width="3.2" stroke-linecap="round" />
 
-    <!-- RIGHT HEMISPHERE: Organic Foliage -->
-    <path d="M 96 168 C 104 140, 112 100, 102 30" stroke="url(#leafGradDarkFull)" stroke-width="3.5" stroke-linecap="round" />
+    <!-- RIGHT HEMISPHERE: Organic Foliage / Leaves -->
+    <path d="M 96 168 C 104 140, 112 100, 102 30" stroke="#3D5643" stroke-width="3.5" stroke-linecap="round" />
 
+    <!-- Leaf 1: Upper Leaf -->
     <path d="M 98 32 C 112 36, 128 48, 126 62 C 124 74, 108 72, 101 64 Z" 
-          fill="url(#leafGradLightFull)" stroke="#2D4A3E" stroke-width="1.2" />
+          fill="url(#leafGradTop)" stroke="#354E3C" stroke-width="1.2" />
 
+    <!-- Leaf 2: Main Upper-Mid Leaf -->
     <path d="M 103 62 C 124 61, 148 72, 146 90 C 144 104, 122 100, 107 88 Z" 
-          fill="url(#leafGradMidFull)" stroke="#21372E" stroke-width="1.2" />
+          fill="url(#leafGradMid)" stroke="#2B4232" stroke-width="1.2" />
 
+    <!-- Leaf 3: Center Large Leaf -->
     <path d="M 106 87 C 132 89, 154 104, 151 122 C 148 136, 126 130, 108 114 Z" 
-          fill="url(#leafGradDarkFull)" stroke="#1B2B24" stroke-width="1.2" />
+          fill="url(#leafGradBot)" stroke="#213527" stroke-width="1.2" />
 
+    <!-- Leaf 4: Lower Leaf -->
     <path d="M 106 114 C 128 122, 144 138, 138 152 C 132 163, 114 156, 103 140 Z" 
-          fill="url(#leafGradMidFull)" stroke="#21372E" stroke-width="1.2" />
+          fill="url(#leafGradMid)" stroke="#2B4232" stroke-width="1.2" />
 
+    <!-- Leaf 5: Bottom Tip Leaf -->
     <path d="M 100 140 C 114 148, 124 159, 118 167 C 112 173, 101 169, 98 165 Z" 
-          fill="url(#leafGradLightFull)" stroke="#2D4A3E" stroke-width="1" />
+          fill="url(#leafGradTop)" stroke="#354E3C" stroke-width="1.2" />
 
-    <path d="M 108 74 C 118 78, 130 83, 138 88" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.45" />
-    <path d="M 112 99 C 124 105, 136 112, 142 118" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.45" />
-    <path d="M 109 124 C 118 130, 127 137, 132 143" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.45" />
+    <!-- Leaf Vein Highlights -->
+    <path d="M 108 74 C 118 78, 130 83, 138 88" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.4" />
+    <path d="M 112 99 C 124 105, 136 112, 142 118" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.4" />
+    <path d="M 109 124 C 118 130, 127 137, 132 143" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.4" />
   </g>
 
-  <!-- LOGOTIPO TYPOGRAPHY (Right side) -->
-  <g transform="translate(138, 20)">
-    <!-- Main Title -->
-    <text x="0" y="32" class="brand-title-line1">Psicología y</text>
-    <text x="0" y="65" class="brand-title-line2">Psicooncología <tspan fill="#C5A880">C.C.</tspan></text>
+  <!-- VERTICAL DIVIDER LINE -->
+  <line x1="140" y1="28" x2="140" y2="114" stroke="url(#goldGrad)" stroke-width="1.6" stroke-linecap="round" opacity="0.9" />
 
-    <!-- Slogan with surrounding subtle lines -->
-    <line x1="0" y1="84" x2="35" y2="84" stroke="#C5A880" stroke-width="1.2" stroke-linecap="round" />
-    <text x="44" y="87" class="brand-slogan">ACOMPAÑAMOS TU PROCESO, TRANSFORMAMOS JUNTOS</text>
-    <line x1="345" y1="84" x2="375" y2="84" stroke="#C5A880" stroke-width="1.2" stroke-linecap="round" />
+  <!-- TYPOGRAPHY & SLOGAN -->
+  <g transform="translate(156, 20)">
+    <!-- Line 1: Psicología y -->
+    <text x="0" y="32" class="brand-text-gold">Psicología y</text>
+
+    <!-- Line 2: Psicooncología C.C. -->
+    <text x="0" y="66" class="brand-text-gold">Psicooncología C.C.</text>
+
+    <!-- Slogan Section (Two-line centered aesthetic) -->
+    <g transform="translate(0, 83)">
+      <line x1="0" y1="5" x2="26" y2="5" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round" />
+      <text x="32" y="8" class="brand-slogan-text">ACOMPAÑAMOS TU PROCESO,</text>
+      <line x1="228" y1="5" x2="254" y2="5" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round" />
+      
+      <text x="40" y="21" class="brand-slogan-text">TRANSFORMAMOS JUNTOS</text>
+    </g>
   </g>
 </svg>

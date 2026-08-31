@@ -259,6 +259,161 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.05rem;
 }
 
+/* --- Highlighting the Appointment Button ("Resalte agenda tu cita psicológica") --- */
+.btn-highlight {
+  position: relative;
+  background: linear-gradient(135deg, #254637 0%, #162B22 100%) !important;
+  border: 1.5px solid var(--color-gold) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 22px rgba(197, 168, 128, 0.4), 0 4px 16px rgba(22, 43, 34, 0.45) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-25deg);
+  animation: shineGlow 3.5s infinite;
+  z-index: -1;
+}
+
+@keyframes shineGlow {
+  0% { left: -100%; }
+  35% { left: 160%; }
+  100% { left: 160%; }
+}
+
+.btn-highlight:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(197, 168, 128, 0.55), 0 8px 25px rgba(37, 64, 52, 0.5) !important;
+  border-color: #F1DEC7 !important;
+}
+
+/* Concept Distinction Cards: Psicología vs Psicooncología */
+.concept-distinction-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.distinction-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  border: 1px solid rgba(197, 168, 128, 0.35);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.distinction-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.distinction-card.card-psico {
+  border-top: 4px solid var(--color-gold);
+}
+
+.distinction-card.card-onco {
+  border-top: 4px solid var(--color-primary);
+}
+
+.distinction-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.distinction-header h3 {
+  font-size: 1.45rem;
+  color: var(--color-primary-dark);
+}
+
+.distinction-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+}
+
+.distinction-badge.gold {
+  background-color: var(--color-gold-soft);
+  color: var(--color-gold-dark);
+  border: 1px solid var(--color-gold-light);
+}
+
+.distinction-badge.green {
+  background-color: var(--color-sage-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-sage-light);
+}
+
+/* Corporate / Workshops Banner */
+.corporate-feature-banner {
+  margin-top: 50px;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(197, 168, 128, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.corporate-banner-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.corporate-banner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.corp-tag {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  color: #E7DBCA;
+  border: 1px solid rgba(231, 219, 202, 0.25);
+}
+
+@media (max-width: 900px) {
+  .concept-distinction-grid {
+    grid-template-columns: 1fr;
+  }
+  .corporate-banner-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .corporate-feature-banner {
+    padding: 30px 20px;
+  }
+}
+
 /* ==========================================================================
    HEADER & NAVIGATION
    ========================================================================== */
