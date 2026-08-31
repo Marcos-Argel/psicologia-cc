@@ -425,55 +425,59 @@ h1, h2, h3, h4, h5, h6 {
   height: var(--header-height);
   z-index: 1000;
   transition: all var(--transition-normal);
-  background-color: rgba(250, 248, 245, 0.85);
+  background-color: rgba(250, 248, 245, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+  border-bottom: 1px solid rgba(197, 168, 128, 0.25);
 }
 
 .site-header.scrolled {
   height: 74px;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow-sm);
-  border-bottom-color: rgba(0, 0, 0, 0.06);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 14px;
   height: 100%;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .header-logo img {
-  height: 48px;
+  height: 52px;
   width: auto;
+  object-fit: contain;
   transition: height var(--transition-normal);
 }
 
 .site-header.scrolled .header-logo img {
-  height: 42px;
+  height: 44px;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: clamp(10px, 1.3vw, 20px);
+  flex-shrink: 1;
 }
 
 .nav-link {
-  font-size: 0.92rem;
-  font-weight: 500;
+  font-size: 0.88rem;
+  font-weight: 600;
   color: var(--color-text-main);
   position: relative;
   padding: 6px 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -499,7 +503,17 @@ h1, h2, h3, h4, h5, h6 {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.btn-header-cta {
+  white-space: nowrap !important;
+  font-size: 0.84rem !important;
+  padding: 9px 18px !important;
+  gap: 8px !important;
+  line-height: 1.2 !important;
+  flex-shrink: 0 !important;
 }
 
 .mobile-toggle {
@@ -513,6 +527,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-sm);
   background: var(--color-gold-soft);
   border: 1px solid var(--color-gold-light);
+  flex-shrink: 0;
 }
 
 .mobile-toggle span {
@@ -535,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Drawer */
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   .mobile-toggle {
     display: flex;
   }
@@ -554,6 +569,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-lg);
     transition: right var(--transition-smooth);
     border-left: 1px solid var(--color-gold-light);
+    overflow-y: auto;
   }
   
   .nav-menu.open {
